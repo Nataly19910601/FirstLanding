@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+
+body {
+
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+/*Тексты*/
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: white;
+    line-height: 3em;
+    text-align: center;
+
+}
+
+article h1 {
+    text-align: left;
+    font-size: 1.5em;
+    color: #454545;
+    line-height: 1.5em;
+}
+
+p {
+    text-align: left;
+    font-size: 1em;
+    color: #acacac;
+    line-height: 2em;
+}
+
+.header h1 {
+    font-size: 2.8em;
+}
+
+.two h1, .two h2 {
+    color: #253345;
+}
+
+a, button {
+
+    color: #3ec0a5;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: 2px solid #3ec0a5;
+    margin: 20px auto;
+    text-transform: uppercase;
+
+}
+
+a:hover {
+    color: #044543;
+
+}
+
+button:hover {
+    color: #044543;
+    cursor: pointer;
+}
+
+.header a {
+    background-color: #3ec0a5;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+}
+
+.header a:hover {
+    color: #044543;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+
+}
+
+/*Хедер*/
+.header {
+    padding-top: 250px;
+    padding-bottom: 270px;
+    background-image: url(../../img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.banner {
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner img {
+    flex: 1 1 100px;
+    max-width: 100px;
+    margin: 0px auto 10px auto;
+}
+
+/*Блок статей*/
+.one {
+    background-color: #0bc9c2;
+
+    background: linear-gradient(45deg, #044543 10%, #0bc9c2 60%, #044543 100%);
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+article {
+    background-color: white;
+    padding: 0px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+article div {
+    margin: 0 auto;
+    max-width: 650px;
+    flex: 1 1 650px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 50px;
+
+}
+
+article img {
+    margin: 0 auto;
+    max-height: 350px;
+
+    max-width: 550px;
+    flex: 1 1 550px;
+}
+
+article a {
+    margin: 30px 0;
+}
+
+/*Галерея*/
+.two {
+    padding-top: 130px;
+    padding-bottom: 110px;
+    background-color: white;
+
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.two img {
+    flex: 1 1 300px;
+    max-width: 300px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.two a {
+    margin-top: 80px;
+    padding: 20px 40px;
+}
+
+/*Призыв*/
+.three {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-image: url(../../img/pic11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.three a {
+    margin-top: 30px;
+}
+
+/*Обратная связь*/
+.four {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    background-color: #253345;
+
+}
+
+.four .content {
+    border-bottom: 1px solid #7c8faa;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+}
+
+.four input {
+    background-color: #3e5776;
+    border-radius: 3px;
+    border: none;
+    flex: 1 1 550px;
+    max-width: 48%;
+    margin: 20px auto;
+    height: 50px;
+    padding: 5px 10px;
+    color: #7c8faa;
+
+}
+
+.input-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.four textarea {
+    background-color: #3e5776;
+    border-radius: 3px;
+    border: none;
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+
+    color: #7c8faa;
+    padding: 5px 10px;
+
+}
+
+input::placeholder {
+    color: #7c8faa;
+}
+
+textarea::placeholder {
+    color: #7c8faa;
+}
+
+textarea::-moz-placeholder {
+    color: #7c8faa;
+}
+
+textarea:-ms-input-placeholder {
+    color: #7c8faa;
+}
+
+.button-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button-form button {
+    width: 200px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+/*Футер*/
+.footer {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    background-color: #253345;
+    text-align: center;
+
+}
+
+/*Соц сети*/
+.socio-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    width: 20%;
+}
+
+.socio {
+
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    width: 40px;
+    height: 40px;
+    background-position: 50% 50%;
+    background-color: #3ec0a5;
+    color: #acacac;
+
+    border-radius: 5px;
+
+}
+
+.socio:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.socio-1 {
+    background-image: url("../../img/ico-1.png");
+}
+
+.socio-2 {
+    background-image: url("../../img/ico-2.png");
+}
+
+.socio-3 {
+    background-image: url("../../img/ico-3.png");
+}
+
+.socio-4 {
+    background-image: url("../../img/ico-4.png");
+}
+
+/*Адаптивность под разные устройства*/
+
+@media (max-width: 1000px) {
+    .socio-block {
+        width: 50%;
+    }
+
+    .one, .two, .three, .four {
+        padding: 10px;
+    }
+
+    article img {
+        margin: 20px auto;
+        max-height: 350px;
+
+        max-width: 300px;
+        flex: 1 1 300px;
+
+    }
+
+    article p, article h1 {
+        text-align: center;
+    }
+
+    article div {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h1 {
+        font-size: 1.5em;
+
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 360px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    article h1 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: .7em;
+    }
+
+    a {
+        font-size: .9em;
+    }
+    button{
+        font-size: .9em;
+    }
+}
